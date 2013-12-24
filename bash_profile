@@ -1,6 +1,8 @@
 ### Aliases
 source ~/.aliases
 
+export EDITOR=vim
+
 ### Prompt Colors
 # Modified version of @gf3’s Sexy Bash Prompt
 # (https://github.com/gf3/dotfiles)
