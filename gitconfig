@@ -19,6 +19,7 @@
     ca = !git add -A && git commit -av
     # Switch to a branch, creating it if necessary
     go = checkout -B
+    co = checkout
     # Show verbose output about tags, branches or remotes
     tags = tag -l
     branches = branch -a
@@ -55,6 +56,7 @@
     # Make `git rebase` safer on OS X
     # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
     trustctime = false
+	editor = vim
 
 [color]
     # Use colors in Git commands that are capable of colored output when

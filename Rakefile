@@ -6,7 +6,8 @@ task :install do
   replace_all = false
   files = Dir['*'] - %w[Rakefile README.md]
   files.each do |file|
-    system %Q{mkdir -p "$HOME/.#{File.dirname(file)}"} if file =~ /\//
+    filename = File.dirname(file)
+    system %Q{mkdir -p "$HOME/.#{filename}"} if file =~ /\//
     if File.exist?(File.join(ENV['HOME'], ".#{file.sub(/\.erb$/, '')}"))
       if File.identical? file, File.join(ENV['HOME'], ".#{file.sub(/\.erb$/, '')}")
         puts "identical ~/.#{file.sub(/\.erb$/, '')}"

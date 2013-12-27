@@ -90,3 +90,7 @@ alias gc='git commit -m' # requires you to type a commit message
 alias gp='git push'
 
 alias reload='. ~/.bash_profile'
+
+# Rails
+alias be='bundle exec'
+alias bi='bundle install'
